@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+    <style>
+        .title{
+            text-align: center;
+            color: orangered;
+            text-shadow: 2px 2px black;
+       
+            font-weight: bolder;
+        }
+        .field {
+            margin-left: 35%;
+        }
+        #emails{
+            padding: 8px;
+            width: 40%;
+            border: 2px solid black;
+        }
+        .button{
+            padding: 8px;
+            background: #000;
+            color: white;
+            transition: .5s;
+        }
+        .button:hover{
+            background-color: palegreen;
+            color: blck;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Gmail Validation</h1>
+    </header>
+    <div class="field">
+        <input id="emails" type="email" placeholder="email" ><button class="button" onclick="verifyEmail()">submit</button>
+        <br>
+        <div style="display: inline;" id="error"></div>
+        <h4>Email: <span id="msg"></span> </h4>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
